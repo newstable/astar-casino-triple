@@ -1,0 +1,28 @@
+{
+  "name": "unity-socketio-testserver",
+  "version": "1.0.0",
+  "description": "The SocketIO testserver for the unity3d socketio package",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DasPeTe (daspetemail@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "express": "^4.14.0",
+    "express-myconnection": "^1.0.4",
+    "fs": "0.0.1-security",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7",
+    "package.json": "^2.0.1",
+    "socket.io": "^2.2.0",
+    "util": "^0.12.3"
+  }
+}
