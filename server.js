@@ -42,7 +42,6 @@ gameSocket = io.on('connection', function (socket) {
     var betResult = [];
     var amount = req.amount;
     var panelIndex;
-    console.log(req)
 
     try {
       if (req.token != "demo") {
@@ -63,7 +62,6 @@ gameSocket = io.on('connection', function (socket) {
       rateArray = rateArray.sort();
       rate = getScore(req.riskFlag, rateArray);
       panelIndex = getPanelIndex(req.riskFlag, rateArray);
-      console.log(rateArray, panelIndex)
       earnAmount = req.betAmount * rate;
       amount -= req.betAmount;
       amount += req.betAmount * rate;
